@@ -8,16 +8,16 @@ long long A[100009];
 long long B[100009];
 
 int main() {
-	// Step #1. “ü—Í
+	// Step #1. å…¥åŠ›
 	cin >> N;
 	for (int i = 1; i <= N; i++) cin >> A[i];
 	for (int i = 1; i <= N; i++) cin >> B[i];
 
-	// Step #2. ƒ\[ƒg
+	// Step #2. ã‚½ãƒ¼ãƒˆ
 	sort(A + 1, A + N + 1);
 	sort(B + 1, B + N + 1);
 
-	// Step #3. “š‚¦‚ğo—Í
+	// Step #3. å‡ºåŠ›
 	long long Answer = 0;
 	for (int i = 1; i <= N; i++) Answer += abs(A[i] - B[i]);
 	cout << Answer << endl;
