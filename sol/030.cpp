@@ -16,7 +16,7 @@ int main() {
 
 	// Step #3. Get Answer
 	int Answer = 0;
-	for (int i = 1; i <= N; i++) {
+	for (int i = 2; i <= N; i++) {
 		if (cnt[i] >= K) Answer += 1;
 	}
 	cout << Answer << endl;
